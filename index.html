@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/modal.css" />
 
     <title>Pagina de Login</title>
   </head>
@@ -41,10 +42,35 @@
             <button class="btn-cadastrar">
               Ainda não tem conta? Cadastre-se aqui!
             </button>
-            <button class="btn-logar">Logar</button>
+            <button class="btn__logar">Logar</button>
           </div>
         </section>
       </div>
+      <dialog class="modal__controller">
+        <div class="modal__container">
+          <button class="closeBtn">X</button>
+          <h2 class="reg__title">Registrar</h2>
+          <form class="form__modalgroup">
+          <div class="form__modalgrouparea">
+          <label for="name">Insira seu nome</label>
+          <input placeholder="Insira seu nome" type="text" name="name" id="name">
+          </div>
+          <div class="form__modalgrouparea">
+          <label for="email">Insira seu email</label>
+          <input placeholder="Insira seu email" type="text" name="email" id="email">
+         </div>
+         <div class="form__modalgrouparea">
+          <label for="password">Insira sua senha</label>
+          <input placeholder="Insira sua senha" type="password" name="password" id="password">
+          </div>
+          <div class="form__modalgrouparea">
+          <label for="password__repeat">Repita a senha</label>
+          <input placeholder="Repita sua senha" type="password" name="password__repeat" id="password__repeat">
+          </div>
+          <button type="submit" class="btn__send">Enviar</button>
+          </form>
+        </div>
+      </dialog>
     </main>
     <script src="./src/scripts/modal.js"></script>
   </body>

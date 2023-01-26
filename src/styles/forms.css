@@ -1,4 +1,4 @@
-.form-group {
+.form-group, .form__modalgroup{
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
@@ -59,7 +59,7 @@
   text-decoration: underline;
 }
 
-.btn-logar {
+.btn__logar, .form__modalgroup > .btn__send{
   cursor: pointer;
   background: #0000ff;
   color: #ffffff;
